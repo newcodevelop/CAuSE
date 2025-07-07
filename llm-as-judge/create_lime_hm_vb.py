@@ -59,7 +59,7 @@ df = torch.load('../kb-fb-ds/kb_fb.pt')
 
 
 import sys
-sys.path.append('/home/dibyanayan/unsup_nle/transformers-research-projects/visual_bert')
+sys.path.append('/home/anonymous/unsup_nle/transformers-research-projects/visual_bert')
 
 
 import torch
@@ -919,7 +919,7 @@ if __name__ == "__main__":
 
     for ii in list(indices):
 
-        image_path = "/home/dibyanayan/TACL/facebook-hateful-memes/hateful_memes/" + IP[ii]
+        image_path = "/home/anonymous/TACL/facebook-hateful-memes/hateful_memes/" + IP[ii]
         text_input = TXT[ii]
 
         # Preprocess image
