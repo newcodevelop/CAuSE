@@ -58,7 +58,7 @@ def seed_worker(worker_id):
 
 
 import sys
-sys.path.append('/home/dibyanayan/unsup_nle/transformers-research-projects/visual_bert')
+sys.path.append('/home/anonymous/unsup_nle/transformers-research-projects/visual_bert')
 
 
 import torch
@@ -735,7 +735,7 @@ if __name__ == "__main__":
    
     for ii in list(indices):
 
-        image_path = '/home/dibyanayan/unsup_nle/flickr30k_images/flickr30k_images/flickr30k_images/' + IP[ii]
+        image_path = '/home/anonymous/unsup_nle/flickr30k_images/flickr30k_images/flickr30k_images/' + IP[ii]
 
         
         text_input = TXT[ii]
