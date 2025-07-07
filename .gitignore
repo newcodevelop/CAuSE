@@ -1,0 +1,8 @@
+*.pt
+*.pth
+*.ckpt
+*.png
+*.jpg
+*.zip
+*.csv
+*.pickle
