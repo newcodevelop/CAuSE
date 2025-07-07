@@ -7,3 +7,4 @@
 *.csv
 *.pickle
 *.out
+/program_outputs
