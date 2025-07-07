@@ -1,0 +1,10 @@
+*.pt
+*.pth
+*.ckpt
+*.png
+*.jpg
+*.zip
+*.csv
+*.pickle
+*.out
+/program_outputs
