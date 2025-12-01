@@ -34,5 +34,31 @@ src/
 Before training the CAuSE explainer, you must train the target "black-box" classifier (e.g., Qwen-VL, FLAVA, VisualBERT). For Qwen-VL, a separate file is used to train it
 
 **Example (Hateful Memes - Qwen-VL):**
-```python src/HM/train/train_qwenvl_hm.py```
+```python 
+src/HM/train/train_qwenvl_hm.py
+```
+
+
+### 2. Train CAuSE
+Train the explanation generator using the CAuSE framework [attached_file:1]. You must specify the `--ablation` argument to define the training mode.
+
+**Required Arguments:**
+- `--ablation` (str, required): The specific configuration to train.
+    - `cause`: The full CAuSE framework (with IIT)
+    - `phi2`: Baseline (standard language model training)
+    - `phi2_ts`: Teacher-Student baseline configuration
+
+**Example (Hateful Memes with Qwen-VL backbone):**
+
+
+**Example (Hateful Memes with Qwen-VL backbone):**
+### Train the CAuSE model (with Causal Abstraction)
+```python src/HM/train/qwenvl_hm_train.py --ablation cause```
+
+### Train the phi2 baseline
+```python src/HM/train/qwenvl_hm_train.py --ablation phi2```
+
+### Train the phi2_ts baseline
+```python src/HM/train/qwenvl_hm_train.py --ablation phi2_ts```
+
 
