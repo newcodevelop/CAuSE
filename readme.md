@@ -10,7 +10,7 @@
 
 ## 📂 Repository Structure
 
-The code is organized by dataset (e.g., `src/HM` for Hateful Memes) [attached_file:1]. Within each dataset directory, the code is split into `train` and `test` folders.
+The code is organized by dataset (e.g., `src/HM` for Hateful Memes). Within each dataset directory, the code is split into `train` and `test` folders.
 
 ### Directory Layout
 
@@ -64,7 +64,7 @@ Train the explanation generator using the CAuSE framework. You must specify the 
 
 
 **Supported Backbones:**
-We support various multimodal backbones [attached_file:1]. Ensure you run the corresponding script for your desired architecture:
+We support various multimodal backbones. Ensure you run the corresponding script for your desired architecture:
 - **Qwen-VL**: `src/HM/train/qwenvl_hm_train.py`
 - **VisualBERT**: `src/HM/train/train_vb_hm.py`
 - **FLAVA**: `src/HM/train/train_flava_hm.py`
