@@ -13,17 +13,18 @@
 The code is organized by dataset (e.g., `src/HM` for Hateful Memes) [attached_file:1]. Within each dataset directory, the code is split into `train` and `test` folders.
 
 ### Directory Layout
+
 src/
-└── <Dataset>/ # e.g., HM (Hateful Memes)
-├── train/ # Training scripts
-│ ├── train_qwenvl_hm.py # (1) Train the Classifier (Qwen-VL)
-│ ├── qwenvl_hm_train.py # (2) Train CAuSE Explainer (Qwen-VL backbone)
-│ ├── train_vb_hm.py # (2) Train CAuSE Explainer (VisualBERT backbone)
-│ ├── train_flava_hm.py # (2) Train CAuSE Explainer (FLAVA backbone)
-│ └── train_clmfb_hm.py # (2) Train CAuSE Explainer (CLIP-Multimodal backbone)
-└── test/ # Testing scripts
-├── test_qwenvl_hm.py # Testing (structure mirrors train/)
-└── ...
+└── <Dataset>/            # e.g., HM (Hateful Memes)
+    ├── train/            # Training scripts
+    │   ├── train_qwenvl_hm.py      # (1) Train the Classifier (Qwen-VL)
+    │   ├── qwenvl_hm_train.py      # (2) Train CAuSE Explainer (Qwen-VL backbone)
+    │   ├── train_vb_hm.py          # (2) Train CAuSE Explainer (VisualBERT backbone)
+    │   ├── train_flava_hm.py       # (2) Train CAuSE Explainer (FLAVA backbone)
+    │   └── train_clmfb_hm.py       # (2) Train CAuSE Explainer (CLIP-Multimodal backbone)
+    └── test/             # Testing scripts
+        ├── test_qwenvl_hm.py       # Testing (structure mirrors train/)
+        └── ...
 
 
 ---
