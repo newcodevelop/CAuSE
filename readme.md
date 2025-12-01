@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)](https://pytorch.org/)
 
-**CAuSE** (**C**ausal **A**bstraction **u**nder **S**imulated **E**xplanation) is a framework designed to generate faithful natural language explanations for multimodal classifiers [web:7]. It leverages **Interchange Intervention Training (IIT)** to align the explanation generation process with the causal mechanisms of the underlying classifier.
+**CAuSE** (**C**ausal **A**bstraction **u**nder **S**imulated **E**xplanation) is a framework designed to generate faithful natural language explanations for multimodal classifiers. It leverages **Interchange Intervention Training (IIT)** to align the explanation generation process with the causal mechanisms of the underlying classifier.
 
 ---
 
@@ -108,7 +108,7 @@ python src/HM/test/test_qwenvl_hm.py
 ## 📧 Contact
 
 For questions or inquiries, please contact:
-- **Dibyanayan Bandyopadhyay**: [dibyanayan_2101ai07@iitp.ac.in](mailto:dibyanayan_2101ai07@iitp.ac.in)
+- **Dibyanayan Bandyopadhyay**: [dibyanayan@gmail.com](mailto:dibyanayan@gmail.com)
 
 ---
 
