@@ -14,17 +14,21 @@ The code is organized by dataset (e.g., `src/HM` for Hateful Memes) [attached_fi
 
 ### Directory Layout
 
+### Directory Layout
+
+```text
 src/
-└── <Dataset>/            # e.g., HM (Hateful Memes)
-    ├── train/            # Training scripts
+└── <Dataset>/                      # e.g., HM (Hateful Memes)
+    ├── train/                      # Training scripts
     │   ├── train_qwenvl_hm.py      # (1) Train the Classifier (Qwen-VL)
     │   ├── qwenvl_hm_train.py      # (2) Train CAuSE Explainer (Qwen-VL backbone)
     │   ├── train_vb_hm.py          # (2) Train CAuSE Explainer (VisualBERT backbone)
     │   ├── train_flava_hm.py       # (2) Train CAuSE Explainer (FLAVA backbone)
     │   └── train_clmfb_hm.py       # (2) Train CAuSE Explainer (CLIP-Multimodal backbone)
-    └── test/             # Testing scripts
-        ├── test_qwenvl_hm.py       # Testing (structure mirrors train/)
+    └── test/                       # Testing scripts
+        ├── test_qwenvl_hm.py       # Testing (mirrors train/)
         └── ...
+```
 
 ---
 
