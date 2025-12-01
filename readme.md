@@ -35,12 +35,12 @@ Before training the CAuSE explainer, you must train the target "black-box" class
 
 **Example (Hateful Memes - Qwen-VL):**
 ```python 
-src/HM/train/train_qwenvl_hm.py
+python src/HM/train/train_qwenvl_hm.py
 ```
 
 
 ### 2. Train CAuSE
-Train the explanation generator using the CAuSE framework [attached_file:1]. You must specify the `--ablation` argument to define the training mode.
+Train the explanation generator using the CAuSE framework. You must specify the `--ablation` argument to define the training mode.
 
 **Required Arguments:**
 - `--ablation` (str, required): The specific configuration to train.
@@ -60,5 +60,57 @@ Train the explanation generator using the CAuSE framework [attached_file:1]. You
 
 ### Train the phi2_ts baseline
 ```python src/HM/train/qwenvl_hm_train.py --ablation phi2_ts```
+
+
+**Supported Backbones:**
+We support various multimodal backbones [attached_file:1]. Ensure you run the corresponding script for your desired architecture:
+- **Qwen-VL**: `src/HM/train/qwenvl_hm_train.py`
+- **VisualBERT**: `src/HM/train/train_vb_hm.py`
+- **FLAVA**: `src/HM/train/train_flava_hm.py`
+- **CLIP-Multimodal**: `src/HM/train/train_clmfb_hm.py`
+
+---
+
+## 📊 Evaluation & Testing
+
+Testing follows the same directory structure (replace `train` with `test` in the path). The testing scripts calculate performance metrics (F1) or faithfulness metrics (CCMR) based on the flags provided.
+
+**Required Arguments:**
+- `--ablation` (str, required): The model configuration to load (must match the training phase: `cause`, `phi2`, or `phi2_ts`)
+- `--counterfactual_test` (int, required): Flag for the metric type
+    - `0`: Calculate standard **F1 Score** (Performance)
+    - `1`: Calculate **CCMR** (Counterfactual Consistency Metric / Faithfulness)
+
+**Example: Calculate Standard F1**
+```python
+python src/HM/test/test_qwenvl_hm.py
+--ablation cause
+--counterfactual_test 0
+```
+
+
+**Example: Calculate Faithfulness (CCMR)**
+```python
+python src/HM/test/test_qwenvl_hm.py
+--ablation cause
+--counterfactual_test 1
+```
+
+### The above codes are shown corresponding to a single dataset (HM). To run on datasets, just replace HM with the corresponding dataset name.
+
+
+---
+
+## 📧 Contact
+
+For questions or inquiries, please contact:
+- **Dibyanayan Bandyopadhyay**: [dibyanayan_2101ai07@iitp.ac.in](mailto:dibyanayan_2101ai07@iitp.ac.in)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
 
 
