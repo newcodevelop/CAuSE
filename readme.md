@@ -26,7 +26,6 @@ src/
         ├── test_qwenvl_hm.py       # Testing (structure mirrors train/)
         └── ...
 
-
 ---
 
 ## 🚀 Usage
