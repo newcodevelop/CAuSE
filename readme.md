@@ -53,8 +53,6 @@ Train the explanation generator using the CAuSE framework. You must specify the 
 
 **Example (Hateful Memes with Qwen-VL backbone):**
 
-
-**Example (Hateful Memes with Qwen-VL backbone):**
 ### Train the CAuSE model (with Causal Abstraction)
 ```python src/HM/train/qwenvl_hm_train.py --ablation cause```
 
