@@ -109,6 +109,29 @@ For questions or inquiries, please contact:
 
 ---
 
+
+## Citation
+
+If you find this code useful, please cite:
+
+```bibtex
+@article{10.1162/TACL.a.686,
+    author = {Bandyopadhyay, Dibyanayan and Bhattacharjee, Soham and Hasanuzzaman, Mohammed and Ekbal, Asif},
+    title = {CAuSE: Decoding Multimodal Classifiers using Faithful Natural Language Explanation},
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume = {14},
+    pages = {829-851},
+    year = {2026},
+    month = {06},
+    abstract = {Multimodal classifiers function as opaque black box models. While several techniques exist to interpret their predictions, very few of them are as intuitive and accessible as natural language explanations (NLEs). To build trust, such explanations must faithfully capture the classifier’s internal decision making behavior, a property known as faithfulness. In this paper, we propose CAuSE (Causal Abstraction under Simulated Explanations), a novel framework to generate faithful NLEs for any pretrained multimodal classifier. We demonstrate that CAuSE generalizes across datasets and models through extensive empirical evaluation. Theoretically, we show that CAuSE, trained via interchange intervention, forms a causal abstraction of the underlying classifier. We further validate this through a redesigned metric for measuring causal faithfulness in multimodal settings. CAuSE surpasses other methods on this metric, with qualitative analysis reinforcing its advantages. We also perform detailed error analysis to pinpoint the failure cases of CAuSE1.},
+    issn = {2307-387X},
+    doi = {10.1162/TACL.a.686},
+    url = {https://doi.org/10.1162/TACL.a.686},
+    eprint = {https://direct.mit.edu/tacl/article-pdf/doi/10.1162/TACL.a.686/2607018/tacl.a.686.pdf},
+}
+```
+
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
